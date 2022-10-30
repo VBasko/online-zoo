@@ -93,7 +93,8 @@ h3 {
 }
 
 button,
-.btn-text {
+.btn-text,
+a.btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -121,6 +122,8 @@ p {
   position: relative;
   z-index: 1;
   color: #fff;
+  text-align: center;
+  text-decoration: none;
 }
 
 .btn::before {
@@ -219,4 +222,10 @@ input[type="submit"]:active {
 form:invalid input[type="submit"] {
   color: var(--color-red);
   border-color: var(--color-red);
+}
+
+a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
