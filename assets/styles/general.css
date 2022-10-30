@@ -53,6 +53,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  width: 100%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .title {
