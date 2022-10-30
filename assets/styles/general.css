@@ -82,6 +82,7 @@ button {
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
+  color: #fff;
 }
 
 p {
@@ -93,4 +94,59 @@ small {
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
+}
+
+.btn {
+  display: block;
+  width: 298px;
+  height: 54px;
+  background: var(--color-orange);
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #e47209;
+  transition: opacity 0.3s linear;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+button:hover,
+button:active,
+button:focus {
+  cursor: pointer;
+}
+
+.btn:active::before,
+.btn:focus::before {
+  background: var(--color-green);
+  opacity: 1;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:disabled:before {
+  background: var(--color-gray);
+  opacity: 1;
 }

@@ -1,0 +1,22 @@
+.paynment-card {
+  width: 168px;
+  height: 244px;
+  margin-left: 20px;
+}
+
+.paynment-card__image {
+  width: 166px;
+  height: 166px;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-orange) border-box;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.paynment-card p {
+  margin: 0;
+}
