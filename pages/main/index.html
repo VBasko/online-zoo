@@ -367,26 +367,86 @@
               </p>
             </div>
           </div>
+          <input type="range" name="progress-bar" id="progress-bar" />
+          <button class="btn">leave feedback</button>
+          <img
+            src="../../assets/images/testimonials_decor.png"
+            alt="leaf"
+            class="decor decor-leaf"
+          />
         </div>
       </section>
     </main>
-    <div class="container">
-      <h1>Here will be the landing page</h1>
-
-      <button class="btn btn-rounded" style="margin-bottom: 10px" disabled>
-        lovely zoo online
-      </button>
-      <button class="btn" style="margin-bottom: 20px">leave feedback</button>
-      <form>
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter your email"
-          pattern=".+@.+\..+"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <a href="../donate/index.html" target="_blank">Link to the donate page</a>
-    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <img src="../../assets/icons/logo.svg" alt="logo" />
+          <div class="subscribe-form">
+            <p class="subtitle">Subscribe to our news</p>
+            <form>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <a href="../donate/index.html" class="btn" target="_blank"
+          >donate for volunteers</a
+        >
+        <div class="footer-bottom grid">
+          <div class="span-4">
+            <ul class="socials-links">
+              <li class="social-links__link">
+                <a href="https://www.facebook.com/">
+                  <img src="../../assets/icons/facebook.svg" alt="facebook" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="social-links__link">
+                <a href="https://twitter.com/">
+                  <img src="../../assets/icons/twitter.svg" alt="twitter" />
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li class="social-links__link">
+                <a href="https://www.instagram.com/">
+                  <img src="../../assets/icons/instagram.svg" alt="instagram" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="social-links__link">
+                <a href="https://www.youtube.com/">
+                  <img src="../../assets/icons/youtube.svg" alt="YouTube" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="span-4">
+            <nav>
+              <ul class="nav-links">
+                <li class="nav-item">
+                  <a href="../main/index.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Map</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Zoos</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="span-4">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
