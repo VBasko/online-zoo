@@ -77,14 +77,6 @@ body {
   column-gap: 30px;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 114px;
-  line-height: 80%;
-  text-transform: uppercase;
-  max-width: 500px;
-}
-
 h2 {
   font-size: 48px;
   line-height: 120%;
@@ -311,4 +303,37 @@ header .nav-item:not(:last-child) {
 
 .nav-link.active {
   color: #f9804b;
+}
+
+.your-favorite {
+  background: url(../images/your_favorite_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center -80px;
+  height: 700px;
+}
+
+.your-favorite .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 106px;
+  line-height: 75%;
+  text-transform: uppercase;
+  max-width: 500px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 86px;
+  margin-bottom: 62px;
+}
+
+.title span {
+  color: var(--color-yellow);
+}
+
+.your-favorite button {
+  margin-right: 100px;
 }
