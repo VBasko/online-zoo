@@ -48,12 +48,15 @@
   --color-gray-smoky: #ababab;
   --color-light-gray: #f1f3f2;
   --color-frosted-glass-white: rgba(253, 253, 255, 0.52);
+  --boder-orange: linear-gradient(white, white) padding-box,
+    var(--color-orange) border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   width: 100%;
+  color: var(--color-black-blue);
 }
 
 .container {
@@ -89,12 +92,12 @@ h3 {
   line-height: 120%;
 }
 
-button {
+button,
+.btn-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
-  color: #fff;
 }
 
 p {
@@ -102,7 +105,7 @@ p {
   line-height: 140%;
 }
 
-small {
+.small {
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
@@ -117,6 +120,7 @@ small {
   border: none;
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 
 .btn::before {
@@ -171,8 +175,7 @@ input#email {
   padding: 10px;
   width: 228px;
   height: 42px;
-  background: linear-gradient(white, white) padding-box,
-    var(--color-orange) border-box;
+  background: var(--boder-orange);
   border-radius: 2px;
   border: 0.7px solid transparent;
 }
