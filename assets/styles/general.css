@@ -150,3 +150,58 @@ button:focus {
   background: var(--color-gray);
   opacity: 1;
 }
+
+input {
+  box-sizing: border-box;
+}
+
+input#email {
+  padding: 10px;
+  width: 228px;
+  height: 42px;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-orange) border-box;
+  border-radius: 2px;
+  border: 0.7px solid transparent;
+}
+
+input#email::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+input#email:focus {
+  outline: none;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-green) border-box;
+}
+
+input#email:invalid {
+  outline: none;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-red) border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 39px;
+  width: 129px;
+  height: 42px;
+  background: var(--color-light-gray);
+  border: 1px solid var(--color-black-blue);
+  border-radius: 5px;
+  transition: 0.3s linear all;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+form:invalid input[type="submit"] {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
