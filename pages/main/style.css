@@ -23,6 +23,7 @@
 .backstage {
   padding-top: 140px;
   padding-bottom: 180px;
+  position: relative;
 }
 
 .backstage .grid {
@@ -51,6 +52,13 @@
 
 .backstage__text p.subtitle {
   margin-bottom: 30px;
+}
+
+.backstage-decor {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  height: 605px;
 }
 
 .pets .container {
