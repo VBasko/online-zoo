@@ -79,6 +79,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -310,49 +311,4 @@ header .nav-item:not(:last-child) {
 .nav-link.active {
   color: #f9804b;
   cursor: default;
-}
-
-.your-favorite {
-  background: url(../images/your_favorite_bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center -80px;
-  height: 700px;
-  position: relative;
-}
-
-.your-favorite .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 106px;
-  line-height: 75%;
-  text-transform: uppercase;
-  max-width: 500px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 86px;
-  margin-bottom: 62px;
-  z-index: 10;
-}
-
-.title span {
-  color: var(--color-yellow);
-}
-
-.your-favorite button {
-  margin-right: 100px;
-}
-
-.your-favorite .circle {
-  position: absolute;
-  top: 12px;
-  right: 328px;
-  width: 465px;
-  height: 465px;
-  border-radius: 50%;
-  background-image: var(--color-orange);
 }
