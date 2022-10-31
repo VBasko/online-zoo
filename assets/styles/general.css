@@ -73,11 +73,17 @@ body {
 }
 
 .grid {
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
 }
 
+img {
+  max-width: 100%;
+}
+
 h2 {
+  font-weight: 400;
   font-size: 48px;
   line-height: 120%;
 }
@@ -303,6 +309,7 @@ header .nav-item:not(:last-child) {
 
 .nav-link.active {
   color: #f9804b;
+  cursor: default;
 }
 
 .your-favorite {

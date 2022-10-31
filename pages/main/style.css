@@ -19,3 +19,36 @@
 .paynment-card p {
   margin: 0;
 }
+
+.backstage {
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+
+.backstage .grid {
+  grid-template-columns: 7fr 5fr;
+}
+
+.backstage__image {
+  padding-right: 52px;
+}
+
+.backstage__image img {
+  backdrop-filter: blur(2px);
+}
+
+.backstage__text {
+  padding-left: 5px;
+}
+
+.backstage__text h2 {
+  margin-bottom: 20px;
+}
+
+.backstage__text p:first-of-type {
+  margin-bottom: 54px;
+}
+
+.backstage__text p.subtitle {
+  margin-bottom: 30px;
+}
