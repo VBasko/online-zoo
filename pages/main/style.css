@@ -164,6 +164,7 @@
   padding: 8px 8px 14px 16px;
   display: flex;
   justify-content: space-between;
+  color: #000;
 }
 
 .pet-card__text p.small {
@@ -260,6 +261,7 @@
   margin-top: 60px;
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .span-2 {
@@ -280,4 +282,67 @@
 
 .pick-and-feed a.btn {
   margin: 0 auto;
+}
+
+/* PICK AND FEED SECTION */
+
+.testimonials {
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+
+.testimonials h3 {
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.testimonial-card {
+  max-height: 391px;
+  overflow-y: hidden;
+  padding: 13px 12px 17px 15px;
+  border-radius: 20px;
+  background: var(--border-pink);
+  border: 2px solid transparent;
+}
+
+.testimonial-card .small {
+  font-weight: 300;
+}
+
+.person {
+  display: flex;
+}
+
+.person-image {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.person-text {
+  margin-bottom: 10px;
+}
+
+.person-text .name {
+  line-height: 120%;
+}
+
+.person-text .small {
+  color: #bdbdbd;
+}
+
+.person-text .dot {
+  margin-left: 6px;
+  margin-right: 5px;
+}
+
+.testimonial-card > p {
+  overflow: hidden;
+  text-overflow: clip;
+  height: 309px;
 }
