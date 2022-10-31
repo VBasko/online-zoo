@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root {
+  --color-green: #4b9200;
+  --color-orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --color-yellow: #ffee2e;
+  --color-orange-grad: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  --color-pink-grad: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  --color-red: #d31414;
+  --color-black-blue: #333b41;
+  --color-gray: #767474;
+  --color-gray-smoky: #ababab;
+  --color-light-gray: #f1f3f2;
+  --color-frosted-glass-white: rgba(253, 253, 255, 0.52);
+  --boder-orange: linear-gradient(white, white) padding-box,
+    var(--color-orange) border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  color: var(--color-black-blue);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.grid {
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+button,
+.btn-text,
+a.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.small {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.btn {
+  display: block;
+  width: 298px;
+  height: 54px;
+  background: var(--color-orange);
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #e47209;
+  transition: opacity 0.3s linear;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+button:hover,
+button:active,
+button:focus {
+  cursor: pointer;
+}
+
+.btn:active::before,
+.btn:focus::before {
+  background: var(--color-green);
+  opacity: 1;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:disabled:before {
+  background: var(--color-gray);
+  opacity: 1;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+input#email {
+  padding: 10px;
+  width: 228px;
+  height: 42px;
+  background: var(--boder-orange);
+  border-radius: 2px;
+  border: 0.7px solid transparent;
+}
+
+input#email::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+input#email:focus {
+  outline: none;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-green) border-box;
+}
+
+input#email:invalid {
+  outline: none;
+  background: linear-gradient(white, white) padding-box,
+    var(--color-red) border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 39px;
+  width: 129px;
+  height: 42px;
+  border-radius: 5px;
+  transition: 0.3s linear all;
+}
+
+form:valid input[type="submit"] {
+  background: var(--color-light-gray);
+  border: 1px solid var(--color-black-blue);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+form:invalid input[type="submit"] {
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+}
+
+a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background: #000000;
+  backdrop-filter: blur(2px);
+  margin: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 80px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .logo {
+  display: flex;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 3.55px 4.75px;
+  box-sizing: border-box;
+  margin-right: 63px;
+}
+
+h1 {
+  position: relative;
+  margin: 0;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 120%;
+  text-align: center;
+  justify-content: center;
+}
+
+header .logo img {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header .nav-item:not(:last-child) {
+  margin-right: 58px;
+}
+
+.nav-link {
+  transition: 0.3s ease all;
+}
+
+.nav-link.active {
+  color: #f9804b;
+}
+
+.your-favorite {
+  background: url(../images/your_favorite_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center -80px;
+  height: 700px;
+  position: relative;
+}
+
+.your-favorite .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 106px;
+  line-height: 75%;
+  text-transform: uppercase;
+  max-width: 500px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 86px;
+  margin-bottom: 62px;
+  z-index: 10;
+}
+
+.title span {
+  color: var(--color-yellow);
+}
+
+.your-favorite button {
+  margin-right: 100px;
+}
+
+.your-favorite .circle {
+  position: absolute;
+  top: 12px;
+  right: 328px;
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background-image: var(--color-orange);
+}
