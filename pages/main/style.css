@@ -52,3 +52,40 @@
 .backstage__text p.subtitle {
   margin-bottom: 30px;
 }
+
+.pets .container {
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 403px;
+  width: 62px;
+  height: 62px;
+  background: var(--color-orange);
+  border: none;
+  border-radius: 50%;
+}
+
+.left-arrow img,
+.right-arrow img {
+  filter: invert(100%);
+}
+
+.left-arrow {
+  left: -82px;
+}
+
+.right-arrow {
+  right: -82px;
+}
+
+.pet-card {
+  background: var(--border-orange);
+  border-radius: 2px;
+  border: 0.7px solid transparent;
+}
