@@ -199,3 +199,47 @@
   height: 275px;
   right: 0;
 }
+
+/* PICK AND FEED SECTION */
+
+.pick-and-feed {
+  background: var(--color-orange-grad);
+  padding-top: 69px;
+  padding-bottom: 100px;
+}
+
+.pick-and-feed .container {
+  background: var(--color-frosted-glass-white);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding-top: 41px;
+}
+
+.pick-and-feed h2.orange {
+  text-align: center;
+  color: #fe9013;
+  margin-bottom: 30px;
+}
+
+.pick-and-feed p {
+  padding-left: 99px;
+}
+
+.pick-and-feed .subtitle {
+  margin-bottom: 40px;
+}
+
+.pick-and-feed p:nth-child(3),
+.pick-and-feed p:nth-child(4) {
+  line-height: 130%;
+}
+
+.pick-and-feed p:nth-child(3) {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.emergency-support {
+  text-decoration: none;
+  color: inherit;
+}
