@@ -183,8 +183,11 @@ input#email {
   padding: 10px;
   width: 228px;
   height: 42px;
-  background: var(--border-orange);
   border-radius: 2px;
+  background: linear-gradient(#111115, #111115) padding-box,
+    var(--color-orange) border-box;
+  color: #fff;
+  margin-right: 10px;
   border: 0.7px solid transparent;
 }
 
@@ -195,14 +198,16 @@ input#email::placeholder {
 
 input#email:focus {
   outline: none;
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#111115, #111115) padding-box,
     var(--color-green) border-box;
+  border: 0.7px solid transparent;
 }
 
 input#email:invalid {
   outline: none;
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#111115, #111115) padding-box,
     var(--color-red) border-box;
+  border: 2px solid transparent;
 }
 
 input[type="submit"] {
@@ -260,13 +265,13 @@ header .container {
   align-items: center;
 }
 
-header a {
+a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
 
-header .logo {
+.logo {
   display: flex;
   width: 82px;
   height: 52px;
@@ -275,9 +280,11 @@ header .logo {
   padding: 3.55px 4.75px;
   box-sizing: border-box;
   margin-right: 63px;
+  color: #ffffff;
 }
 
-h1 {
+h1,
+footer .logo p {
   position: relative;
   margin: 0;
   font-weight: 400;
@@ -287,7 +294,7 @@ h1 {
   justify-content: center;
 }
 
-header .logo img {
+.logo img {
   position: absolute;
   bottom: 0;
   left: 5px;
