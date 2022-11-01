@@ -362,9 +362,18 @@
   max-height: 8px;
 }
 
-input[type="range"]::-webkit-slider-thumb,
-input[type="range"]::-moz-range-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  height: 6px;
+  width: 115px;
+  border-radius: 5px;
+  background: #fe9013;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
   height: 6px;
   width: 115px;
   border-radius: 5px;
