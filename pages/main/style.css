@@ -215,10 +215,6 @@
   transition: all 0.3s ease;
 }
 
-/* .pet-card:hover p {
-  transform: translateY(0px);
-} */
-
 .pet-card__text p.small {
   margin-top: -3px;
 }
@@ -336,7 +332,7 @@
   margin: 0 auto;
 }
 
-/* PICK AND FEED SECTION */
+/* TESTIMONIALS SECTION */
 
 .testimonials {
   padding-top: 140px;
