@@ -309,8 +309,15 @@ header .nav-item:not(:last-child) {
   margin-right: 58px;
 }
 
-.nav-link {
+.nav-link,
+.header-right a {
   transition: 0.3s ease all;
+}
+
+.nav-link:hover,
+.header-right a:hover {
+  color: #f9804b;
+  cursor: pointer;
 }
 
 .nav-link.active {
