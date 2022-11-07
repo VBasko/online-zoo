@@ -102,7 +102,7 @@ p.amount {
   padding-left: 4px;
 }
 
-.donation-card form {
+.donation-card form.choose-amount {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -131,6 +131,7 @@ p.amount {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .radio-button {
@@ -148,6 +149,7 @@ p.amount {
   margin-bottom: 21px;
   z-index: 2;
   position: relative;
+  cursor: pointer;
 }
 
 .radio-button::before,
@@ -201,4 +203,90 @@ p.amount {
 
 .radio-button:checked ~ label::before {
   content: url(../../assets/icons/dollar-orange.svg);
+}
+
+.feed-friend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.another-amount {
+  width: 268px;
+  height: 54px;
+  color: #929699;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 16px 0 16px 9px;
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 25px;
+  outline: none;
+  background-image: url(../../assets/icons/dollar-gray.svg);
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+}
+
+.another-amount:active,
+.another-amount:checked,
+.another-amount:focus {
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.monthly-once {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 31px;
+}
+
+.monthly-once label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+}
+
+.monthly-once input {
+  margin-right: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: 0.3s all ease;
+}
+
+.monthly-once input:checked {
+  background: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.feed-friend button {
+  margin-bottom: 30px;
+}
+
+p.share {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  margin: 0;
 }

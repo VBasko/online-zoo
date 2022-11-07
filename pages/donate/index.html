@@ -88,7 +88,7 @@
             </div>
             <p class="amount">Amount</p>
             <div class="progress-bar"></div>
-            <form>
+            <form class="choose-amount">
               <div class="input-label">
                 <input
                   type="radio"
@@ -170,6 +170,28 @@
                 <label for="usd25">25</label>
               </div>
             </form>
+            <form class="feed-friend">
+              <input
+                type="number"
+                name="another-amount"
+                id="another-amount"
+                class="another-amount"
+                placeholder="Another amount"
+                max="9999"
+              />
+              <div class="monthly-once">
+                <label for="monthly">
+                  <input type="radio" name="period" id="monthly" />Monthly
+                </label>
+                <label for="once">
+                  <input type="radio" name="period" id="once" checked />Once
+                </label>
+              </div>
+              <button type="submit" class="btn btn-rounded">
+                Feed a friend now
+              </button>
+            </form>
+            <p class="share">Share with your friends on social networks</p>
           </div>
         </div>
       </section>
