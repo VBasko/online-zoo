@@ -1,0 +1,144 @@
+.hero {
+  height: 390px;
+  background: url(../../assets/images/your_favorite_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  display: none;
+}
+
+.pick-and-feed-donate {
+  background: var(--color-orange-grad);
+  padding-top: 40px;
+  padding-bottom: 180px;
+}
+
+.pick-and-feed-donate h3 {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pick-and-feed-donate p {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.pick-and-feed-donate h3.orange {
+  color: #fe9013;
+  margin-bottom: 60px;
+}
+
+.donation-card {
+  background: var(--color-frosted-glass-white);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 40px 92px 62px;
+}
+
+.donation-card h2 {
+  text-align: center;
+  color: #fe9013;
+  margin-bottom: 20px;
+}
+
+.donation-card p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333b41;
+  margin-bottom: 60px;
+}
+
+.animal-widget {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.amount-of-days-donate {
+  margin-right: 11px;
+}
+
+.amount-of-days-donate p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.amount-of-days-donate p.number {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 105px;
+  margin-bottom: 11px;
+}
+
+.animal-widget > img {
+  margin-right: 64px;
+}
+
+.big-animal-icon {
+  width: 284px;
+  height: 246px;
+}
+
+.big-animal-icon img {
+  width: 100%;
+}
+
+p.amount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 17px;
+  padding-left: 4px;
+}
+
+.donation-card form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  width: 100%;
+  padding-left: 26px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  width: 910px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 31px;
+  background: #72828e;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label label {
+  padding-left: 12px;
+}
+
+.progress-bar input[type="radio"] {
+  z-index: 2;
+  margin-bottom: 21px;
+}
