@@ -1,0 +1,292 @@
+.hero {
+  height: 390px;
+  background: url(../../assets/images/your_favorite_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  display: none;
+}
+
+.pick-and-feed-donate {
+  background: var(--color-orange-grad);
+  padding-top: 40px;
+  padding-bottom: 180px;
+}
+
+.pick-and-feed-donate h3 {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pick-and-feed-donate p {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.pick-and-feed-donate h3.orange {
+  color: #fe9013;
+  margin-bottom: 60px;
+}
+
+.donation-card {
+  background: var(--color-frosted-glass-white);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 40px 92px 62px;
+}
+
+.donation-card h2 {
+  text-align: center;
+  color: #fe9013;
+  margin-bottom: 20px;
+}
+
+.donation-card p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333b41;
+  margin-bottom: 60px;
+}
+
+.animal-widget {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.amount-of-days-donate {
+  margin-right: 11px;
+}
+
+.amount-of-days-donate p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.amount-of-days-donate p.number {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 105px;
+  margin-bottom: 11px;
+}
+
+.animal-widget > img {
+  margin-right: 64px;
+}
+
+.big-animal-icon {
+  width: 284px;
+  height: 246px;
+}
+
+.big-animal-icon img {
+  width: 100%;
+}
+
+p.amount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 17px;
+  padding-left: 4px;
+}
+
+.donation-card form.choose-amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  width: 100%;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  width: 910px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 31px;
+  background: #72828e;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.radio-button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffee2e;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 26px;
+  margin-right: 30px;
+  margin-top: -19px;
+  margin-bottom: 21px;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button::before,
+.radio-button::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #fe9013;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: transparent;
+  top: -6.5px;
+  left: -6.5px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+
+.radio-button::after {
+  width: 40px;
+  height: 40px;
+  top: -15px;
+  left: -15px;
+}
+
+.radio-button:checked::before,
+.radio-button:checked::after {
+  opacity: 1;
+}
+
+.radio-button:checked ~ label {
+  color: #fe9013;
+}
+
+.input-label label {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+  padding-left: 12px;
+  position: relative;
+}
+
+.input-label label::before {
+  position: absolute;
+  content: url(../../assets/icons/dollar.svg);
+  left: 0;
+  bottom: 0;
+}
+
+.radio-button:checked ~ label::before {
+  content: url(../../assets/icons/dollar-orange.svg);
+}
+
+.feed-friend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.another-amount {
+  width: 268px;
+  height: 54px;
+  color: #929699;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 16px 0 16px 9px;
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 25px;
+  outline: none;
+  background-image: url(../../assets/icons/dollar-gray.svg);
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+}
+
+.another-amount:active,
+.another-amount:checked,
+.another-amount:focus {
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.monthly-once {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 31px;
+}
+
+.monthly-once label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+}
+
+.monthly-once input {
+  margin-right: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: 0.3s all ease;
+}
+
+.monthly-once input:checked {
+  background: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.feed-friend button {
+  margin-bottom: 30px;
+}
+
+p.share {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  margin: 0;
+}
