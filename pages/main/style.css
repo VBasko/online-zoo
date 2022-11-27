@@ -26,7 +26,7 @@
   background: url(../../assets/images/your_favorite_bg.jpg) no-repeat;
   background-size: cover;
   background-position: center -80px;
-  height: 700px;
+  height: 43.75rem;
   position: relative;
 }
 
@@ -38,14 +38,14 @@
 
 .title {
   font-weight: 700;
-  font-size: 106px;
+  font-size: 6.625rem;
   line-height: 75%;
   text-transform: uppercase;
-  max-width: 500px;
+  max-width: 31.25rem;
   color: #ffffff;
   text-align: center;
-  margin-top: 86px;
-  margin-bottom: 62px;
+  margin-top: 5.375rem;
+  margin-bottom: 3.875rem;
   z-index: 10;
 }
 
@@ -54,15 +54,15 @@
 }
 
 .your-favorite button {
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 .your-favorite .circle {
   position: absolute;
-  top: 12px;
-  right: 328px;
-  width: 465px;
-  height: 465px;
+  top: 0.75rem;
+  right: 20.5rem;
+  width: 29.0625rem;
+  height: 29.0625rem;
   border-radius: 50%;
   background-image: var(--color-orange);
 }
@@ -477,4 +477,152 @@ input[type="range"]::-moz-range-track {
   right: 0;
   width: 250px;
   z-index: -1;
+}
+
+@media (999px < width < 1600px) {
+  .container {
+    max-width: 940px;
+  }
+  .header-left {
+  }
+  .logo {
+  }
+  header .nav-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .nav-item {
+  }
+  .nav-link {
+  }
+  .active {
+  }
+  .header-right {
+  }
+  .main {
+  }
+  .your-favorite {
+    height: 36.5rem;
+    overflow: hidden;
+  }
+  .your-favorite .circle {
+    top: -0.75rem;
+    right: 11.0625rem;
+    width: 22.9375rem;
+    height: 22.9375rem;
+    z-index: 1;
+  }
+  .title {
+    font-size: 5.3125rem;
+    margin-top: 2.675rem;
+    min-width: 25.0156rem;
+    margin-right: 0.45rem;
+    margin-bottom: 2.51rem;
+  }
+  .your-favorite button {
+    margin-right: 6.75rem;
+  }
+  .yellow {
+  }
+  .btn {
+  }
+  .btn-rounded {
+  }
+  .backstage {
+  }
+  .grid {
+  }
+  .backstage__image {
+  }
+  .backstage__text {
+  }
+  .subtitle {
+  }
+  .backstage-decor {
+    display: none;
+  }
+  .pets {
+  }
+  .pets .container.grid {
+    row-gap: 5.75rem;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .left-arrow {
+  }
+  .pet-card {
+  }
+  .pet-card__image {
+  }
+  .pet-card__info {
+  }
+  .pet-card__text {
+  }
+  .btn-text {
+  }
+  .small {
+  }
+  .banana-bamboo-icon {
+  }
+  .right-arrow {
+  }
+  .palm {
+  }
+  .flower {
+  }
+  .pick-and-feed {
+  }
+  .orange {
+  }
+  .emergency-support {
+  }
+  .span-2 {
+  }
+  .paynment-card {
+  }
+  .paynment-card__image {
+  }
+  .arrow {
+  }
+  .testimonials {
+  }
+  .span-3 {
+  }
+  .testimonial-card {
+  }
+  .person {
+  }
+  .person-image {
+  }
+  .person-text {
+  }
+  .name {
+  }
+  .dot {
+  }
+  .decor-leaf {
+  }
+  .footer-top {
+  }
+  .subscribe-form {
+  }
+  .donate {
+  }
+  .footer-bottom {
+  }
+  .span-4 {
+  }
+  .socials-links {
+  }
+  .social-links__link {
+  }
+  .footer-nav {
+  }
+  .designed-by {
+  }
 }
