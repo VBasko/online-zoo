@@ -528,12 +528,33 @@ input[type="range"]::-moz-range-track {
   .btn-rounded {
   }
   .backstage {
+    padding-top: 20px;
   }
-  .grid {
+  .backstage .grid {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
   }
   .backstage__image {
+    grid-column: span 3;
+    padding: 0;
+    margin-top: 9px;
+    height: 408px;
+    width: 455px;
+    overflow: hidden;
+    background-image: url(../../assets/images/backstage_img.jpg);
+    background-size: cover;
+    background-position: -80px;
+  }
+
+  .backstage__image img {
+    display: none;
   }
   .backstage__text {
+    grid-column: span 3;
+    padding: 0;
+  }
+  .backstage__text p:last-of-type {
+    padding-left: 1px;
   }
   .subtitle {
   }
