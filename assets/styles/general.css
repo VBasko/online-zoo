@@ -383,12 +383,18 @@ footer .subtitle {
   margin-bottom: 2.75rem;
 }
 
-.footer-nav,
-footer .designed-by {
+.footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+footer .designed-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .footer-nav nav li:not(:last-child) {
@@ -414,5 +420,18 @@ footer .designed-by p:first-child {
   .grid {
     grid-template-columns: repeat(6, 1fr);
     column-gap: 1.875rem;
+  }
+  .subscribe-form {
+    padding-right: 1.9rem;
+  }
+  .footer-bottom.sm-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-nav nav {
+    padding-left: 5.625rem;
+  }
+  .footer-nav nav li:not(:last-child) {
+    margin-right: 3rem;
   }
 }
