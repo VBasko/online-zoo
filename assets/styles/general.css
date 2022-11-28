@@ -403,3 +403,16 @@ footer .designed-by p {
 footer .designed-by p:first-child {
   margin-bottom: 0.625rem;
 }
+
+@media (999px < width < 1600px) {
+  .container {
+    max-width: 940px;
+  }
+  header .nav-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.875rem;
+  }
+}
