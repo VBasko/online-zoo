@@ -494,14 +494,14 @@ input[type="range"]::-moz-range-track {
   z-index: -1;
 }
 
-@media (999px < width < 1600px) {
+@media (width < 1600px) {
   .your-favorite {
     height: 36.5rem;
     overflow: hidden;
   }
   .your-favorite .circle {
     top: -0.75rem;
-    right: 11.0625rem;
+    right: 18%;
     width: 22.9375rem;
     height: 22.9375rem;
     z-index: 1;
@@ -675,5 +675,112 @@ input[type="range"]::-moz-range-track {
   .decor-leaf {
     width: 12.5rem;
     bottom: -5.625rem;
+  }
+}
+
+@media (width < 1000px) {
+  .arrow {
+    top: 50%;
+    left: 50%;
+  }
+  .main {
+  }
+  .your-favorite {
+    height: 400px;
+  }
+  .container {
+  }
+  .circle {
+  }
+  .title {
+  }
+  .yellow {
+  }
+  .btn {
+  }
+  .btn-rounded {
+  }
+  .backstage {
+  }
+  .grid {
+  }
+  .backstage__image {
+    display: none;
+  }
+  .backstage__text {
+  }
+  .subtitle {
+  }
+  .backstage-decor {
+  }
+  .pets {
+  }
+  .pets .container.grid {
+    grid-template-rows: 2fr;
+    overflow-y: hidden;
+  }
+  .left-arrow {
+  }
+  .pet-card {
+  }
+  .pet-card__image {
+  }
+  .pet-card__info {
+  }
+  .pet-card__text {
+  }
+  .btn-text {
+  }
+  .small {
+  }
+  .banana-bamboo-icon {
+  }
+  .right-arrow {
+  }
+  .palm {
+  }
+  .flower {
+  }
+  .pick-and-feed {
+  }
+  .orange {
+  }
+  .emergency-support {
+  }
+  .span-2 {
+  }
+  .small-desk-dn {
+  }
+  .paynment-card {
+  }
+  .paynment-card__image {
+  }
+  .arrow {
+  }
+  .left {
+  }
+  .small-desk-abs {
+  }
+  .right {
+  }
+  .testimonials {
+  }
+  .span-3 {
+  }
+  .sm-span-2 {
+  }
+  .testimonial-card {
+  }
+  .person {
+  }
+  .person-image {
+  }
+  .person-text {
+  }
+  .name {
+  }
+  .dot {
+  }
+  .decor-leaf {
   }
 }
