@@ -686,19 +686,33 @@ input[type="range"]::-moz-range-track {
   .main {
   }
   .your-favorite {
-    height: 400px;
+    height: 373px;
+    background-position: center -34px;
   }
   .container {
   }
-  .circle {
+  .your-favorite .circle {
+    width: 237.6px;
+    height: 237.6px;
+    top: 10px;
+    right: 11%;
   }
   .title {
+    font-size: 54.2894px;
+    line-height: 75%;
+    max-width: 255.64px;
+    min-width: 0;
+    margin-top: 3rem;
+    margin-right: -0.3rem;
   }
   .yellow {
   }
   .btn {
   }
-  .btn-rounded {
+  .your-favorite .btn {
+    margin-right: 0;
+    align-self: flex-start;
+    margin-top: -2.8rem;
   }
   .backstage {
   }
