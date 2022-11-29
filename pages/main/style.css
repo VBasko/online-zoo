@@ -722,10 +722,24 @@ input[type="range"]::-moz-range-track {
     display: none;
   }
   .backstage__text {
+    grid-column: span 5;
+    padding-top: 0.4rem;
   }
-  .subtitle {
+  .backstage__text h2,
+  .backstage__text .subtitle {
+    padding-left: 0.2rem;
+  }
+  .backstage__text p:first-of-type {
+    margin-bottom: 30px;
+  }
+  .backstage p.subtitle {
+    margin-bottom: 20px;
   }
   .backstage-decor {
+    display: block;
+    top: -40px;
+    right: -30px;
+    height: 476px;
   }
   .pets {
   }
