@@ -414,6 +414,10 @@ footer .designed-by p:first-child {
   margin-bottom: 0.625rem;
 }
 
+section {
+  overflow: hidden;
+}
+
 @media (max-width: 1599px) {
   .container {
     max-width: 940px;
@@ -450,7 +454,7 @@ footer .designed-by p:first-child {
   .header-left nav {
     display: none;
   }
-  a.logo {
+  header a.logo {
     border: none;
     padding: 0 !important;
     margin: 0 !important;
@@ -467,14 +471,6 @@ footer .designed-by p:first-child {
     bottom: 0;
     left: 4px;
   }
-  .nav-links {
-  }
-  .nav-item {
-  }
-  .nav-link {
-  }
-  .active {
-  }
   .header-right a {
     display: none;
   }
@@ -482,7 +478,41 @@ footer .designed-by p:first-child {
     display: block;
   }
 
-  footer {
+  .tablet-hide {
     display: none;
+  }
+
+  footer {
+    padding-top: 12px;
+  }
+  footer .container {
+    position: relative;
+  }
+  footer .social-links__link a span {
+    display: none;
+  }
+  .social-links__link img {
+    margin-right: 0;
+    min-width: 26px;
+    min-height: 26px;
+  }
+  footer .donate {
+    margin-top: 32px;
+    margin-bottom: 67px;
+  }
+  .footer-bottom.sm-flex .span-4:first-child {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  footer .socials-links {
+    gap: 20px;
+  }
+  .footer-nav nav {
+    padding-left: 0;
+  }
+  .footer-nav nav li:not(:last-child) {
+    margin-right: 37px;
+    line-height: 140%;
   }
 }
