@@ -748,7 +748,7 @@ input[type="range"]::-moz-range-track {
   .pets .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-auto-rows: 0;
+    grid-auto-flow: row dense;
     overflow: hidden;
     max-width: 640px;
   }
@@ -756,14 +756,6 @@ input[type="range"]::-moz-range-track {
     width: 285px;
     border-radius: 4px;
     height: 332px;
-  }
-  #pet-card-3 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-  #pet-card-4 {
-    grid-row: 2/3;
-    grid-column: 2/3;
   }
   #pet-card-5,
   #pet-card-6,
@@ -1044,5 +1036,26 @@ input[type="range"]::-moz-range-track {
     transform: rotate(87deg);
     top: 544px;
     left: 108px;
+  }
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .testimonials .grid {
+    grid-auto-flow: row dense;
+  }
+  .testimonials h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  .testimonials .btn {
+    margin-top: 16px;
+  }
+  .decor-leaf {
+    width: 71.21px;
+    transform: rotate(-16deg);
+    bottom: -52px;
+    right: -13px;
   }
 }
