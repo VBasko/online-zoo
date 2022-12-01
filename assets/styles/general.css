@@ -516,3 +516,13 @@ section {
     line-height: 140%;
   }
 }
+
+@media (width < 640px) {
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+  footer {
+    display: none;
+  }
+}
