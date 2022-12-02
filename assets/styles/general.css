@@ -398,7 +398,7 @@ footer .designed-by {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .footer-nav nav li:not(:last-child) {
