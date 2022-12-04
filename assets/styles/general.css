@@ -73,7 +73,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 30px;
+  column-gap: 1.875rem;
 }
 
 img {
@@ -83,17 +83,17 @@ img {
 
 h2 {
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 120%;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 130%;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
 }
 
@@ -101,26 +101,26 @@ button,
 .btn-text,
 a.btn {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
 }
 
 .small {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 120%;
 }
 
 .btn {
   display: block;
-  width: 298px;
-  height: 54px;
+  width: 18.625rem;
+  height: 3.375rem;
   background: var(--color-orange);
   border-radius: 5px;
   border: none;
@@ -181,13 +181,13 @@ input {
 
 input#email {
   padding: 10px;
-  width: 228px;
-  height: 42px;
+  width: 14.25rem;
+  height: 2.625rem;
   border-radius: 2px;
   background: linear-gradient(#111115, #111115) padding-box,
     var(--color-orange) border-box;
   color: #fff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   border: 0.7px solid transparent;
 }
 
@@ -211,9 +211,9 @@ input#email:invalid {
 }
 
 input[type="submit"] {
-  padding: 10px 39px;
-  width: 129px;
-  height: 42px;
+  padding: 0.625rem 2.4375rem;
+  width: 8.0625rem;
+  height: 2.625rem;
   border-radius: 5px;
   transition: 0.3s linear all;
 }
@@ -249,7 +249,8 @@ header {
   margin: 0;
   color: #ffffff;
   width: 100%;
-  height: 80px;
+  height: 5rem;
+  font-size: 1rem;
 }
 
 header .container {
@@ -273,13 +274,13 @@ a {
 
 .logo {
   display: flex;
-  width: 82px;
-  height: 52px;
+  width: 5.125rem;
+  height: 3.25rem;
   border: 1px solid #fff;
   border-radius: 2px;
-  padding: 3.55px 4.75px;
+  padding: 0.221875rem 0.296875rem;
   box-sizing: border-box;
-  margin-right: 63px;
+  margin-right: 3.9375rem;
   color: #ffffff;
 }
 
@@ -288,7 +289,7 @@ footer .logo p {
   position: relative;
   margin: 0;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 120%;
   text-align: center;
   justify-content: center;
@@ -297,7 +298,7 @@ footer .logo p {
 .logo img {
   position: absolute;
   bottom: 0;
-  left: 5px;
+  left: 0.3125rem;
 }
 
 nav ul {
@@ -306,7 +307,7 @@ nav ul {
 }
 
 header .nav-item:not(:last-child) {
-  margin-right: 58px;
+  margin-right: 3.625rem;
 }
 
 .nav-link,
@@ -325,12 +326,16 @@ header .nav-item:not(:last-child) {
   cursor: default;
 }
 
+.sm-display {
+  display: none;
+}
+
 /* FOOTER */
 footer {
   z-index: 2;
   background: #111115;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 2.5rem;
+  padding-bottom: 3.125rem;
   color: #ffffff;
 }
 
@@ -343,7 +348,7 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .social-links__link a {
@@ -357,7 +362,7 @@ footer {
 }
 
 .social-links__link img {
-  margin-right: 12px;
+  margin-right: 0.75rem;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -374,15 +379,21 @@ footer {
 
 footer .subtitle {
   color: #ffffff;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 
 .donate {
-  margin-top: 36px;
-  margin-bottom: 44px;
+  margin-top: 2.25rem;
+  margin-bottom: 2.75rem;
 }
 
-.footer-nav,
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 footer .designed-by {
   display: flex;
   flex-direction: column;
@@ -391,7 +402,7 @@ footer .designed-by {
 }
 
 .footer-nav nav li:not(:last-child) {
-  margin-right: 58px;
+  margin-right: 3.625rem;
 }
 
 footer .designed-by p {
@@ -400,5 +411,175 @@ footer .designed-by p {
 }
 
 footer .designed-by p:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+section {
+  overflow: hidden;
+}
+
+@media (max-width: 1599px) {
+  .container {
+    max-width: 940px;
+  }
+  header .nav-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.875rem;
+  }
+  .subscribe-form {
+    padding-right: 1.9rem;
+  }
+  .footer-bottom.sm-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-nav nav {
+    padding-left: 5.625rem;
+  }
+  .footer-nav nav li:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 999px) {
+  header {
+    height: 34px;
+  }
+  .container {
+    padding: 0 1.25rem;
+    max-width: 640px;
+  }
+  .header-left nav {
+    display: none;
+  }
+  header a.logo {
+    border: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 46.86px;
+    height: 29.03px;
+  }
+  .logo h1 {
+    font-size: 12.2899px;
+    line-height: 120%;
+    margin-bottom: 2px;
+  }
+  .logo img {
+    height: 13.56px;
+    bottom: 0;
+    left: 4px;
+  }
+  .header-right a {
+    display: none;
+  }
+  .sm-display {
+    display: block;
+  }
+
+  .tablet-hide {
+    display: none;
+  }
+
+  footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  footer .container {
+    position: relative;
+  }
+  footer .social-links__link a span {
+    display: none;
+  }
+  .social-links__link img {
+    margin-right: 0;
+    min-width: 26px;
+    min-height: 26px;
+  }
+  footer .donate {
+    margin-top: 32px;
+    margin-bottom: 67px;
+  }
+  .footer-bottom.sm-flex .span-4:first-child {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  footer .socials-links {
+    gap: 20px;
+  }
+  .footer-nav nav {
+    padding-left: 0 !important;
+  }
+  .footer-nav nav li:not(:last-child) {
+    margin-right: 37px;
+    line-height: 140%;
+  }
+}
+
+@media (width < 640px) {
+  .container {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer .logo {
+    border: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  footer .logo p {
+    font-size: 19.0145px;
+    line-height: 120%;
+  }
+  footer .logo img {
+    left: 72px;
+    height: 100%;
+    bottom: 2px;
+  }
+  footer .donate {
+    margin-top: 86px;
+    margin-bottom: 30px;
+  }
+  .footer-bottom.sm-flex .span-4:first-child {
+    display: flex;
+    justify-content: center;
+    top: 52px;
+    width: 100%;
+    right: 0;
+  }
+  footer .socials-links {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer-bottom.sm-flex {
+    flex-direction: column-reverse;
+  }
+  footer .designed-by {
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  footer .designed-by p {
+    font-size: 15px;
+    line-height: 120%;
+    text-align: left;
+  }
+  footer .designed-by p:first-child {
+    margin-bottom: 13px;
+    padding-right: 8px;
+  }
+  .footer-nav {
+    align-items: center;
+  }
+  .footer-nav nav li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
