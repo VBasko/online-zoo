@@ -336,7 +336,174 @@ p.share {
 }
 
 @media (width < 1000px) {
+  .hero {
+    height: 335px;
+  }
+  .pick-and-feed-donate {
+    padding-top: 30px;
+    padding-bottom: 46px;
+  }
+  .pick-and-feed-donate h3 {
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .pick-and-feed-donate p {
+    margin-bottom: 30px;
+  }
+  .pick-and-feed-donate h3.orange {
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+  .donation-card {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .donation-card h2 {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .donation-card p.subtitle {
+    margin-bottom: 50px;
+  }
+  .donation-card .animal-widget {
+    margin-bottom: 40px;
+  }
+  p.amount {
+    margin-bottom: 7px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .progress-bar {
+    width: 100%;
+  }
+  .progress-bar::before {
+    width: calc(100% - 70px);
+    left: 35px;
+  }
+  .another-amount {
+    width: 180px;
+    height: 42px;
+    margin-bottom: 30px;
+  }
+  .monthly-once {
+    margin-bottom: 29px;
+  }
+  p.share {
+    margin-bottom: 0;
+  }
 }
 
 @media (width < 640px) {
+  .hero {
+    height: 187px;
+  }
+  .pick-and-feed-donate {
+    padding-bottom: 20px;
+  }
+  .pick-and-feed-donate h3.orange,
+  .donation-card h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .donation-card {
+    padding: 20px 0;
+  }
+  .donation-card h2 {
+    margin-bottom: 10px;
+  }
+  .donation-card p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .donation-card p.subtitle {
+    margin-bottom: 10px;
+  }
+  .amount-of-days-donate p {
+    font-size: 9.02255px;
+    line-height: 140%;
+    width: 90px;
+  }
+  .amount-of-days-donate p.number {
+    font-size: 40.6015px;
+    margin-bottom: 6px;
+    margin-top: 55px;
+  }
+  .amount-of-days-donate {
+    margin-right: 6px;
+  }
+  .animal-widget {
+    margin-right: 0;
+    margin-bottom: 0 !important;
+  }
+  .animal-widget > img {
+    width: 8px;
+    height: 8px;
+    margin-top: 68px;
+    margin-right: 36px;
+  }
+  .big-animal-icon {
+    max-width: 160px;
+    max-height: 138px;
+  }
+  p.amount {
+    padding-left: 0;
+  }
+  .progress-bar {
+    height: 13.5px;
+  }
+  .radio-button {
+    width: 5px;
+    height: 5px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+  }
+  .radio-button::before,
+  .radio-button::after {
+    border: 1px solid #fe9013;
+  }
+  .radio-button::before {
+    width: 11.5px;
+    height: 11.5px;
+    top: -2.75px;
+    left: -2.75px;
+  }
+  .radio-button::after {
+    width: 20px;
+    height: 20px;
+    top: -7.5px;
+    left: -7.5px;
+  }
+  .input-label {
+    align-items: center;
+  }
+  .input-label label {
+    font-size: 13px;
+    line-height: 140%;
+    padding-left: 8px;
+    width: fit-content;
+  }
+  .input-label label::before {
+    transform: scale(0.5);
+    top: 0px;
+  }
+  .progress-bar::before {
+    width: calc(100% - 36px);
+    left: 18px;
+  }
+  .another-amount {
+    margin-bottom: 25px;
+    margin-top: -25px;
+  }
+  .monthly-once {
+    margin-left: -20px;
+    margin-bottom: 27px;
+  }
+  p.share {
+    margin-left: -1px;
+  }
 }

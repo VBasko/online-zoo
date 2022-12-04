@@ -450,6 +450,7 @@ section {
   }
   .container {
     padding: 0 1.25rem;
+    max-width: 640px;
   }
   .header-left nav {
     display: none;
@@ -484,6 +485,7 @@ section {
 
   footer {
     padding-top: 12px;
+    padding-bottom: 12px;
   }
   footer .container {
     position: relative;
@@ -509,7 +511,7 @@ section {
     gap: 20px;
   }
   .footer-nav nav {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
   .footer-nav nav li:not(:last-child) {
     margin-right: 37px;
