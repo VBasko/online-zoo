@@ -447,6 +447,11 @@ section {
 @media (max-width: 999px) {
   header {
     height: 34px;
+    position: fixed;
+    z-index: 100;
+  }
+  main {
+    padding-top: 34px;
   }
   .container {
     padding: 0 1.25rem;
